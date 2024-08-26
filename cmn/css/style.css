@@ -13,23 +13,6 @@
   margin: 0 auto;
   list-style: none;
 }
-/* 左上のボックス */
-.top-left-box {
-  width: 300px;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: lightcoral;
-  border: 3px solid #000;
-  position:absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-}
-.top-left-box li{
-  list-style: none;
-}
 a.btn-flat {
   position: fixed;
   left: 0%;
@@ -62,19 +45,19 @@ a.btn-flat:hover:before {
 }
 a.btn1{
   top: 0;
-  padding: 1.5rem 7.5rem;
+  padding: 1.5rem 5.5rem;
 } 
 a.btn2{
   top: 72px;
-  padding: 1.5rem 5.62rem;
+  padding: 1.5rem 3.62rem;
 } 
 a.btn3{
     top: 144px;
-    padding: 1.5rem 6.25rem;
+    padding: 1.5rem 4.25rem;
 }
 a.btn4{
     top: 216px;
-    padding: 1.5rem 7.5rem;
+    padding: 1.5rem 5.5rem;
 }
 /* フレックスボックスのエリア */
 .area_flexbox {
@@ -142,7 +125,7 @@ a.btn4{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 1100px;
+  width: 900px;
   height: 1200px;
   border: 5px solid #000;
   padding: 30px;
@@ -204,7 +187,7 @@ a.btn4{
   align-items: flex-start;
   justify-items: flex-start;
   flex-wrap: wrap;
-  width: 1100px;
+  width: 900px;
   height: 200px;
   border: 5px solid #000;
   padding: 30px;
@@ -217,15 +200,15 @@ a.btn4{
   position: relative; /* 子要素の絶対位置を基準にするために必要 */
 }
 .skillList img{
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   padding: 10px;
 }
 .list1{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 900px;
+  width: 500px;
   height: 100px;
   border: 5px solid #000;
   background: skyblue;
@@ -242,17 +225,17 @@ a.btn4{
   align-items: flex-start;
   justify-items: flex-start;
   flex-wrap: wrap;
-  width: 1100px;
+  width: 500px;
   height: 100px;
   border: 5px solid #000;
   padding: 0px;
   margin: 0 auto;
-  margin-bottom:50px;
+  margin-bottom:0px;
   position: relative; /* 子要素の絶対位置を基準にするために必要 */
 }
 .gametitle li{
   list-style: none;
-  width: 1100px;
+  width: 500px;
   height: 100px;
   display: flex;
   align-items: center;
@@ -268,62 +251,62 @@ a.btn4{
   align-items: flex-start;
   justify-items: flex-start;
   flex-wrap: wrap;
-  width: 1800px;
-  height: 680px;
+  width: 1400px;
+  height: 500px;
   /*border: 5px solid #000;*/
   padding: 0px;
   margin: 0 auto;
-  margin-bottom: 300px;
+  margin-bottom: 00px;
   position: relative; /* 子要素の絶対位置を基準にするために必要 */
 }
 .game iframe{
   position: absolute;
   top: 0px; /* 上から10pxの位置に配置 */
   left: 450px; /* 左から450pxの位置に配置 */
-  width: 850px;
-  height: 400px;
+  width: 500px;
+  height: 300px;
   background: rgb(255, 255, 255);
 }
 .game span{
   position: absolute;
   top: 70px; /* 上から70pxの位置に配置 */
-  right: 245px; /* 右から245pxの位置に配置 */
+  right: 200px; /* 右から245pxの位置に配置 */
   font: 900 30px/1.5em 'noto sans japanese',sans-serif;
 }
 .game img{
   position: absolute;
   top: 0px; /* 上から0pxの位置に配置 */
-  right: 200px; /* 右から200pxの位置に配置 */
+  right: 150px; /* 右から200pxの位置に配置 */
   width: 180px;
   height: 180px;
 }
 .game h1{
   position: absolute;
-  bottom: 180px; /* 下から180pxの位置に配置 */
-  left: 300px; /* 左から300pxの位置に配置 */
+  bottom: 100px; /* 下から180pxの位置に配置 */
+  left: 10px; /* 左から300pxの位置に配置 */
   background: white;
   border: 3px solid #000;
 }
 .game a1{
   position:absolute;
-  bottom: 50px; /* 上から50pxの位置に配置 */
-  left: 300px; /* 左から3000pxの位置に配置 */
-  width: 1300px;
-  height: 150px;
+  bottom: 0px; /* 上から50pxの位置に配置 */
+  left: 10px; /* 左から3000pxの位置に配置 */
+  width: 1000px;
+  height: 120px;
   background: white;
   border: 3px solid #000;
 }
 .game p{
   position: absolute;
-  top: 200px; /* 上から200pxの位置に配置 */
+  top: 170px; /* 上から200pxの位置に配置 */
   right: 70px; /* 右から70pxの位置に配置 */
-  font: 900 30px/1.5em 'noto sans japanese',sans-serif;
+  font: 900 25px/1.5em 'noto sans japanese',sans-serif;
 }
 .game p1{
   position: absolute;
   bottom: 30px; /* 下から30pxの位置に配置 */
   left: 0px; /* 左から0pxの位置に配置 */
-  font: 900 25px/2em 'noto sans japanese',sans-serif;
+  font: 900 20px/2em 'noto sans japanese',sans-serif;
 }
 
 /* 並び順 */
