@@ -1,0 +1,358 @@
+@charset "utf-8";
+/*@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);*/
+.body{
+  /*background: skyblue;*/
+  background: rgba(108, 185, 185, 0.573);
+}
+.main-container {
+  display: flex;
+  flex-direction: column; /* 縦に配置 */
+  align-items: flex-start; /* 左寄せ */
+  gap: 20px; /* 要素間の隙間 */
+  width: 900px;
+  margin: 0 auto;
+  list-style: none;
+}
+/* 左上のボックス */
+.top-left-box {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: lightcoral;
+  border: 3px solid #000;
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.top-left-box li{
+  list-style: none;
+}
+a.btn-flat {
+  position: fixed;
+  left: 0%;
+  overflow: hidden;
+  color: #000000;
+  border-radius: 0;
+  background: rgba(166, 230, 167, 0.86);
+}
+
+a.btn-flat span {
+  position: relative;
+  font: 900 20px/1em 'noto sans japanese',sans-serif;
+}
+a.btn-flat:before {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 25em;
+  height: 5em;
+  content: '';
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-96%);
+  transform: translateX(-96%);
+  background: #adffff92;
+}
+a.btn-flat:hover:before {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+a.btn1{
+  top: 0;
+  padding: 1.5rem 7.5rem;
+} 
+a.btn2{
+  top: 72px;
+  padding: 1.5rem 5.62rem;
+} 
+a.btn3{
+    top: 144px;
+    padding: 1.5rem 6.25rem;
+}
+a.btn4{
+    top: 216px;
+    padding: 1.5rem 7.5rem;
+}
+/* フレックスボックスのエリア */
+.area_flexbox {
+  padding: 100px 0;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1100px;
+  height: 750px;
+  /*border: 5px solid #000;*/
+  padding: 30px;
+  margin: 0 auto;
+  margin-bottom: 300px;
+  list-style: none;
+  margin-bottom: 20px; /* 縦の間隔を確保 */
+  position: relative; /* 子要素の絶対位置を基準にするために必要 */
+}
+.title h1{
+  position: absolute;
+  top: 190px; /* 上から20pxの位置に配置 */
+  font: 900 100px/1em 'noto sans japanese',sans-serif;
+  color: rgba(59, 185, 116, 0.6);
+}
+
+.profielList{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1100px;
+  height: 750px;
+  /*border: 5px solid #000;*/
+  padding: 30px;
+  margin: 0 auto;
+  margin-bottom: 300px;
+  list-style: none;
+  margin-bottom: 20px; /* 縦の間隔を確保 */
+  position: relative; /* 子要素の絶対位置を基準にするために必要 */
+}
+.profielList h1{
+  position: absolute;
+  top: 100px; /* 上から100pxの位置に配置 */
+  left: 100px; /* 左から100pxの位置に配置 */
+  font: 900 60px/1em 'noto sans japanese',sans-serif;
+}
+.profielList img{
+  background-image:url(../image/IMG_1403.JPG);
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  top: 120px; /* 上から120pxの位置に配置 */
+  right: 10px; /* 右から10pxの位置に配置 */
+}
+.profielList p{
+  position: absolute;
+  top: 200px; /* 上から200pxの位置に配置 */
+  left: 100px; /* 左から100pxの位置に配置 */
+  font: 700 20px/2em 'noto sans japanese',sans-serif;
+}
+
+/* 青いボックスの親要素 */
+.list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1100px;
+  height: 1200px;
+  border: 5px solid #000;
+  padding: 30px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+/* 青いボックス */
+.list li {
+  list-style: none;
+  margin-bottom: 20px; /* 縦の間隔を確保 */
+  position: relative; /* 子要素の絶対位置を基準にするために必要 */
+}
+.list a{
+  width: 400px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: darkcyan;
+  position: relative; /* 子要素の絶対位置を基準にするために必要 */
+}
+.list h1 {
+  position: absolute;
+  top: 0px; /* 上から20pxの位置に配置 */
+  left: 20px; /* 左から20pxの位置に配置 */
+  font: 900 40px/1em 'noto sans japanese',sans-serif;
+}
+.list img{
+  position: absolute;
+  top: 120px; /* 上から20pxの位置に配置 */
+  left: 20px; /* 左から20pxの位置に配置 */
+  width: 350px;
+  height: 200px;
+  background: rgb(255, 255, 255);
+}
+.list p{
+  position: absolute;
+  top: 300px;
+  left: 90px;
+  font: 900 40px/1em 'noto sans japanese',sans-serif;
+}
+.list p2{
+  position: absolute;
+  top: 340px;
+  left: 115px;
+  font: 900 40px/1em 'noto sans japanese',sans-serif;
+}
+.list button{
+  position: absolute;
+  top: 420px;
+  left: 130px;
+  font: 900 40px/1em 'noto sans japanese',sans-serif;
+  /*border: 3px solid #000;*/
+  background: darkgoldenrod;
+}
+.skillList{
+  display: flex;
+  align-items: flex-start;
+  justify-items: flex-start;
+  flex-wrap: wrap;
+  width: 1100px;
+  height: 200px;
+  border: 5px solid #000;
+  padding: 30px;
+  margin: 0 auto;
+  margin-bottom: 300px;
+}
+.skillList li{
+  list-style: none;
+  margin-bottom: 0px; /* 縦の間隔を確保 */
+  position: relative; /* 子要素の絶対位置を基準にするために必要 */
+}
+.skillList img{
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+}
+.list1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 900px;
+  height: 100px;
+  border: 5px solid #000;
+  background: skyblue;
+  padding: 10px;
+  margin: 0 auto;
+}
+.list1 h1{
+  font-size: 50px;
+}
+
+
+.gametitle{
+  display: flex;
+  align-items: flex-start;
+  justify-items: flex-start;
+  flex-wrap: wrap;
+  width: 1100px;
+  height: 100px;
+  border: 5px solid #000;
+  padding: 0px;
+  margin: 0 auto;
+  margin-bottom:50px;
+  position: relative; /* 子要素の絶対位置を基準にするために必要 */
+}
+.gametitle li{
+  list-style: none;
+  width: 1100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: skyblue;
+  position: relative; /* 子要素の絶対位置を基準にするために必要 */
+}
+.gametitle h1{
+  font-size: 50px;
+}
+.game{
+  display: flex;
+  align-items: flex-start;
+  justify-items: flex-start;
+  flex-wrap: wrap;
+  width: 1800px;
+  height: 680px;
+  /*border: 5px solid #000;*/
+  padding: 0px;
+  margin: 0 auto;
+  margin-bottom: 300px;
+  position: relative; /* 子要素の絶対位置を基準にするために必要 */
+}
+.game iframe{
+  position: absolute;
+  top: 0px; /* 上から10pxの位置に配置 */
+  left: 450px; /* 左から450pxの位置に配置 */
+  width: 850px;
+  height: 400px;
+  background: rgb(255, 255, 255);
+}
+.game span{
+  position: absolute;
+  top: 70px; /* 上から70pxの位置に配置 */
+  right: 245px; /* 右から245pxの位置に配置 */
+  font: 900 30px/1.5em 'noto sans japanese',sans-serif;
+}
+.game img{
+  position: absolute;
+  top: 0px; /* 上から0pxの位置に配置 */
+  right: 200px; /* 右から200pxの位置に配置 */
+  width: 180px;
+  height: 180px;
+}
+.game h1{
+  position: absolute;
+  bottom: 180px; /* 下から180pxの位置に配置 */
+  left: 300px; /* 左から300pxの位置に配置 */
+  background: white;
+  border: 3px solid #000;
+}
+.game a1{
+  position:absolute;
+  bottom: 50px; /* 上から50pxの位置に配置 */
+  left: 300px; /* 左から3000pxの位置に配置 */
+  width: 1300px;
+  height: 150px;
+  background: white;
+  border: 3px solid #000;
+}
+.game p{
+  position: absolute;
+  top: 200px; /* 上から200pxの位置に配置 */
+  right: 70px; /* 右から70pxの位置に配置 */
+  font: 900 30px/1.5em 'noto sans japanese',sans-serif;
+}
+.game p1{
+  position: absolute;
+  bottom: 30px; /* 下から30pxの位置に配置 */
+  left: 0px; /* 左から0pxの位置に配置 */
+  font: 900 25px/2em 'noto sans japanese',sans-serif;
+}
+
+/* 並び順 */
+@media screen and (max-width: 900px){
+  .order_1 {
+    order: 1;
+  }
+  .order_2 {
+    order: 2;
+  }
+  .order_3 {
+    order: 3;
+  }
+  .order_4 {
+    order: 4;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
