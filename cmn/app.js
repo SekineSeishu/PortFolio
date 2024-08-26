@@ -3,7 +3,7 @@ function adjustForDPI() {
   
   // ノートPCのDPIスケーリングに合わせてサイズや位置を調整
   if (dpi == 1.25) {
-    document.querySelectorAll('.object').forEach(element => {
+    document.querySelectorAll('.list').forEach(element => {
     Element.style.transform = 'scale(0.8)';
     Element.style.transformOrigin = 'top left';
     });
